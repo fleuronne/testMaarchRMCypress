@@ -1,0 +1,22 @@
+{
+  "name": "testmaarchcypress",
+  "version": "1.0.0",
+  "description": "test fonctionnel sur maarchRM avec Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress",
+    "test"
+  ],
+  "author": "Ngaleu vinny",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.3"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "mochawesome": "^7.1.3"
+  }
+}

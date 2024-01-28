@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-10-11T06:48:39.132Z",
+    "end": "2023-10-11T06:49:50.476Z",
+    "duration": 71344,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "40b594b0-9ed0-4a59-9ecd-fd30bfb3a0fc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\SC-Account\\loginForm.cy.js",
+      "file": "cypress\\e2e\\SC-Account\\loginForm.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1f67602e-8491-43ac-b67b-5f6ff718bfb3",
+          "title": "connexion a la page acceuil de maarchRM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "connexion with login and password",
+              "fullTitle": "connexion a la page acceuil de maarchRM connexion with login and password",
+              "timedOut": null,
+              "duration": 60498,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\SC-Account\\\\loginForm.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\loginForm.cy.js\\\\connexion a la page acceuil de maarchRM -- connexion with login and password (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.visit('http://18.207.217.149/');\ncy.get('#userName').type('superadmin');\ncy.get('#password').type('superadmin');\ncy.get('#loginButton').click();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://18.207.217.149/__cypress/runner/cypress_runner.js:146876:72)\n    at <unknown> (http://18.207.217.149/__cypress/runner/cypress_runner.js:147850:16)\n    at tryCatcher (http://18.207.217.149/__cypress/runner/cypress_runner.js:18744:23)\n    at <unknown> (http://18.207.217.149/__cypress/runner/cypress_runner.js:13866:41)\n    at tryCatcher (http://18.207.217.149/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (http://18.207.217.149/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (http://18.207.217.149/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (http://18.207.217.149/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (http://18.207.217.149/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (http://18.207.217.149/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (http://18.207.217.149/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://18.207.217.149/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (http://18.207.217.149/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/SC-Account/loginForm.cy.js:5:9)",
+                "diff": null
+              },
+              "uuid": "a1c700e5-35df-4342-b838-b60de7ac6f7e",
+              "parentUUID": "1f67602e-8491-43ac-b67b-5f6ff718bfb3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a1c700e5-35df-4342-b838-b60de7ac6f7e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 60498,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
